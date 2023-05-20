@@ -2,7 +2,8 @@ const inputA = document.getElementById("input-a")
 const inputB = document.getElementById("input-b")
 const inputC = document.getElementById("input-c")
 const botaoResolver = document.getElementById("botao-resolver")
-const resultadoEquacao = document.getElementById("resultado-equacao")
+const resultadoX1 = document.getElementById("resultado-x1")
+const resultadoX2 = document.getElementById("resultado-x2")
 
 const resolverEquacao = () =>{
     const valorA = parseFloat(inputA.value)
@@ -18,7 +19,8 @@ const resolverEquacao = () =>{
         console.log(delta)
         const x1 = (-1 * valorB + Math.sqrt(delta, 2)) / (2 * valorA)
         const x2 = (-1 * valorB - Math.sqrt(delta, 2)) / (2 * valorA)
-        resultadoEquacao.innerHTML = `x1 = ${x1}; x2 = ${x2}`
+        resultadoX1.innerHTML = `x1 = ${x1}`
+        resultadoX2.innerHTML = `x2 = ${x2}`
     }   
      
 }

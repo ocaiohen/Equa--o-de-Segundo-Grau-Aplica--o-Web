@@ -4,19 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cavalo</title>
+    <link rel = "stylesheet" href= "./styles.css">
+    <title>Equação de Segundo Grau</title>
 </head>
 <body>
-    <main>
-        <label for="input-a">Insira o elemento "a"</label>
-        <input id = "input-a">
-        <label for="input-b">Insira o elemento "b"</label>
-        <input id = "input-b">
-        <label for="input-c">Insira o elemento "c"</label>
-        <input id = "input-c">
-        <button id = "botao-resolver">Resolver</button>
-        <p id = "resultado-equacao"></p>
-    </main>
+    <div class = "container">
+        <header>
+            <h2>Equação de Segundo Grau</h1>
+        </header>
+        <main>
+            <div class = "coeficiente-div">
+                <label for="input-a" class = "label-coeficiente">Insira o coeficiente a</label>
+                <input id = "input-a" type="number" class="input-coeficiente">
+            </div>
+            <div class = "coeficiente-div">
+                <label for="input-b" class = "label-coeficiente">Insira o coeficiente b</label>
+                <input id = "input-b" type="number" class="input-coeficiente">
+            </div>
+            <div class = "coeficiente-div">
+                <label for="input-c" class = "label-coeficiente">Insira o coeficiente c</label>
+                <input id = "input-c" type="number" class="input-coeficiente">
+            </div>
+            <button id = "botao-resolver">RESOLVER</button>
+            <div class = "div-resultado">
+                <p id = "resultado-x1">x1 = ?</p>
+                <p id = "resultado-x2">x2 = ?</p>
+            </div>
+            
+        </main>
+    </div>
 <script src = "./main.js"></script>
 </body>
 </html>
