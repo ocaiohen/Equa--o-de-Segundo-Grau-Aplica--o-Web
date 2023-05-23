@@ -15,12 +15,15 @@ body{
     margin: 0 auto;
     height: 100%;
     width: 370px;
+    border-radius: 25px;
     background-color: rgb(207, 207, 207);
     border: 2px solid black;
 }
 header{
     text-align: center;
     width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     background-color: rgb(29, 147, 211);
 }
 h2{
